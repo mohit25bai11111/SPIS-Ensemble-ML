@@ -65,20 +65,19 @@ SPIS utilizes **Gini Importance** to provide transparency. Analysis confirms tha
 ---
 
 ## 📊 Model Visualizations
-To ensure the model is both accurate and explainable, the following technical visualizations were generated:
+To ensure the system is both accurate and explainable, the following visualizations were generated during the evaluation phase:
 
+### 🔹 Technical Performance & Explainability
 | Confusion Matrix | Feature Importance |
 | :---: | :---: |
 | ![Confusion Matrix](assets/confusion_matrix.png) | ![Feature Importance](assets/feature_importance.png) |
-| *Shows the model's 100% accuracy with zero misclassifications.* | *(Note: Profiles with >2 Internships and >8.5 CGPA consistently trigger the 94.23% Confidence Score.)* |
+| *Verified 100% accuracy with zero misclassifications on the test set.* | *(Note: Profiles combining high technical proficiency with industry exposure consistently trigger the 94.23% Confidence Score.)* |
 
-### 📈 Attribute Impact Analysis
-The chart below illustrates how specific factors (CGPA, Internships, Projects) correlate with the final placement verdict.
+### 🔹 Attribute Impact Analysis
+The chart below illustrates how specific student factors correlate with the final placement verdict, providing actionable insights for profile improvement.
 
 ![Factors Bar Chart](assets/factors.png)
-*Highlights the Gini Importance of each student attribute.*
-
----
+*Gini Importance showing Internships and Projects as top drivers.*
 
 
 ---
