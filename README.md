@@ -62,18 +62,40 @@ $$z = \frac{x - \mu}{\sigma}$$
 ### 🔹 Explainable AI (XAI)
 SPIS utilizes **Gini Importance** to provide transparency. Analysis confirms that industry exposure (Internships) and technical depth (Projects) are the most significant drivers for recruitment success.
 
+---
+
+## 📊 Model Visualizations
+To ensure the model is both accurate and explainable, the following technical visualizations were generated:
+
+| Confusion Matrix | Feature Importance |
+| :---: | :---: |
+| ![Confusion Matrix](assets/confusion_matrix.png) | ![Feature Importance](assets/feature_importance.png) |
+| *Shows the model's 100% accuracy with zero misclassifications.* | *(Note: Profiles with >2 Internships and >8.5 CGPA consistently trigger the 94.23% Confidence Score.)* |
+
+### 📈 Attribute Impact Analysis
+The chart below illustrates how specific factors (CGPA, Internships, Projects) correlate with the final placement verdict.
+
+![Factors Bar Chart](assets/factors.png)
+*Highlights the Gini Importance of each student attribute.*
+
+---
 
 
 ---
 
 ## 📁 Repository Structure
 ```text
-Student-Placement-System/
-├── data/
+SPIS-Ensemble-ML/
+├── assets/                       # Visualizations and Branding
+│   ├── confusion_matrix.png      # Model performance heatmap
+│   ├── feature_importance.png    # XAI Importance bar chart
+│   └── factors_barchart.png      # Student attribute correlation chart
+├── data/                         # Dataset storage
 │   └── placement_data.csv        # Engineered synthetic dataset
-├── notebooks/
-│   └── Placement_Predictor_Ensemble.ipynb # Full ML Pipeline
-├── src/
-│   └── model_trainer.py          # Core Ensemble logic
-├── requirements.txt              # Dependency list
-└── README.md                     # Project documentation
+├── notebooks/                    # Interactive development
+│   └── Placement_Predictor_Ensemble.ipynb 
+├── src/                          # Modular source code
+│   └── model_trainer.py          
+├── .gitignore                    # Metadata filter
+├── requirements.txt              # Environment dependencies
+└── README.md                     # Technical documentation
